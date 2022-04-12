@@ -1,0 +1,182 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survei</title>
+    <style type="text/css">
+        body { font-family: Arial; }
+    </style>
+</head>
+<body>
+    <p>
+        Survei Pelayanan Publik
+    </p>
+    <div style="padding-left: 100px; padding-right: 100px;">
+        <div style="border: 1px solid black; padding: 10px;">
+        <form action="contact.php" method="POST">
+                <table>
+                    <tr>
+                        <td>
+                            <p>
+                                <input type="text" name="nama" placeholder="Nama Lengkap" style="width: 520px; height: 30px;">
+                            </p>
+                            <p>
+                                <input type="email" name="email" placeholder="Email" style="width: 520px; height: 30px;">
+                            </p>
+                            <p>
+                                <select name="jeniskelamin" style="width: 520px; height: 30px;">
+                                    <option value="default">Jenis Kelamin</option>
+                                    <option value="laki-laki">Laki-laki</option>
+                                    <option value="perempuan">Perempuan</option>
+                                </select>
+                            </p>
+                            <p>
+                                <input type="date" name="tanggal" placeholder="Tanggal Lahir" style="width: 520px; height: 30px;">
+                            </p>
+                        </td>
+                        <td style="width: 550px; padding-left: 40px;">
+                            <p>
+                                <select name="pendidikan" style="width: 520px; height: 30px;">
+                                    <option value="default">Pendidikan</option>
+                                    <option value="SD">SD</option>
+                                    <option value="SMP">SMP</option>
+                                    <option value="SMA/SMK">SMA/SMK</option>
+                                    <option value="perguruantinggi">Perguruan Tinggi</option>
+                                    <option value="lainnya">Lainnya</option>
+                                </select>
+                            </p>
+                            <p>
+                                <select name="pekerjaan" style="width: 520px; height: 30px;">
+                                    <option value="default">Pekerjaan</option>
+                                    <option value="petani">Petani</option>
+                                    <option value="kantor">Kantor</option>
+                                    <option value="wiraswasta">Wiraswasta</option>
+                                    <option value="pegawainegri">Pegawai Negri</option>
+                                    <option value="lainnya">Lainnya</option>
+                                </select>
+                            </p>
+                            <p style="font-size: 15px;">Pernah mengajukan permohonan?</p>
+                            <p>
+                                <input type="checkbox" name="permohonan" /><label for="pernah">Pernah</label><br />
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+        </form>
+        </div>
+        <p>
+            Pertanyaan-pertanyaan Kuisoner
+        </p>
+        <div style="border: 1px solid black; padding: 10px;">
+            <form action="contact.php" method="POST">
+                <table> 
+                    <div style="display: flex; align-items: center; justify-content: center;">
+                        <div style="width: 540px;">
+                        <p style="font-size: 17px; display: flex; justify-content: center; align-items: center;">
+                            1. Menurut anda apakah kejelasan dan kepastian petugas yang melayani di Dinas Kesehatan benar-benar sudah sesuai ?
+                        </p>
+                        </div>
+                        <div style="width: 540px;">
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                            <div style="align-items: center; justify-content: center; padding-right: 20px; padding-left: 20px;">
+                                <p>
+                                    Sangat Baik
+                                </p><input type="radio" name="satu" value="sangatbaik">
+                            </div>
+                            <div style="align-items: center; justify-content: center; padding-right: 20px; padding-left: 20px;">
+						        <p>
+                                    Baik
+                                </p><input type="radio" name="satu" value="baik">
+                            </div>
+                            <div style="align-items: center; justify-content: center; padding-right: 20px; padding-left: 20px;">
+                                <p>
+                                    Cukup Baik
+                                </p><input type="radio" name="satu" value="cukupbaik">
+                            </div>
+                            <div style="align-items: center; justify-content: center; padding-right: 20px; padding-left: 20px;">
+                                <p>
+                                    Tidak Baik
+                                </p><input type="radio" name="satu" value="tidakbaik">
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <hr>
+                </table>
+            </form>
+            <form action="contact.php" method="POST">
+                <table> 
+                    <div style="display: flex; align-items: center; justify-content: center;">
+                        <div style="width: 540px;">
+                        <p style="font-size: 17px; display: flex; justify-content: center; align-items: center;">
+                            1. Menurut anda apakah kejelasan dan kepastian petugas yang melayani di Dinas Kesehatan benar-benar sudah sesuai ?
+                        </p>
+                        </div>
+                        <div style="width: 540px;">
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                            <div style="align-items: center; justify-content: center; padding-right: 20px; padding-left: 20px;">
+                                <p>
+                                    Sangat Baik
+                                </p><input type="radio" name="satu" value="sangatbaik">
+                            </div>
+                            <div style="align-items: center; justify-content: center; padding-right: 20px; padding-left: 20px;">
+						        <p>
+                                    Baik
+                                </p><input type="radio" name="satu" value="baik">
+                            </div>
+                            <div style="align-items: center; justify-content: center; padding-right: 20px; padding-left: 20px;">
+                                <p>
+                                    Cukup Baik
+                                </p><input type="radio" name="satu" value="cukupbaik">
+                            </div>
+                            <div style="align-items: center; justify-content: center; padding-right: 20px; padding-left: 20px;">
+                                <p>
+                                    Tidak Baik
+                                </p><input type="radio" name="satu" value="tidakbaik">
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <hr>
+                </table>
+            </form>
+            <form action="contact.php" method="POST">
+                <table> 
+                    <div style="display: flex; align-items: center; justify-content: center;">
+                        <div style="width: 540px;">
+                        <p style="font-size: 17px; display: flex; justify-content: center; align-items: center;">
+                            1. Menurut anda apakah kejelasan dan kepastian petugas yang melayani di Dinas Kesehatan benar-benar sudah sesuai ?
+                        </p>
+                        </div>
+                        <div style="width: 540px;">
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                            <div style="align-items: center; justify-content: center; padding-right: 20px; padding-left: 20px;">
+                                <p>
+                                    Sangat Baik
+                                </p><input type="radio" name="satu" value="sangatbaik">
+                            </div>
+                            <div style="align-items: center; justify-content: center; padding-right: 20px; padding-left: 20px;">
+						        <p>
+                                    Baik
+                                </p><input type="radio" name="satu" value="baik">
+                            </div>
+                            <div style="align-items: center; justify-content: center; padding-right: 20px; padding-left: 20px;">
+                                <p>
+                                    Cukup Baik
+                                </p><input type="radio" name="satu" value="cukupbaik">
+                            </div>
+                            <div style="align-items: center; justify-content: center; padding-right: 20px; padding-left: 20px;">
+                                <p>
+                                    Tidak Baik
+                                </p><input type="radio" name="satu" value="tidakbaik">
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
