@@ -6,38 +6,41 @@
     <title>Survei</title>
     <style type="text/css">
         body { font-family: Arial; }
+        .font::-webkit-input-placeholder{
+            color: black;
+        }
     </style>
 </head>
 <body>
-    <p>
+    <p style="font-size: 30px; font-weight: bold;">
         Survei Pelayanan Publik
     </p>
     <div style="padding-left: 100px; padding-right: 100px;">
         <div style="border: 1px solid black; padding: 10px;">
-        <form action="contact.php" method="POST">
+        <form action="contact.php" method="POST" style="align-items: center;">
                 <table>
                     <tr>
                         <td>
                             <p>
-                                <input type="text" name="nama" placeholder="Nama Lengkap" style="width: 520px; height: 30px;">
+                                <input class="font" type="text" name="nama" placeholder="Nama Lengkap" style="width: 520px; height: 30px; background-color: #d9d6ce; border-color: #d9d6ce; border-radius: 10px;">
                             </p>
                             <p>
-                                <input type="email" name="email" placeholder="Email" style="width: 520px; height: 30px;">
+                                <input class="font" type="email" name="email" placeholder="Email" style="width: 520px; height: 30px; background-color: #d9d6ce; border-color: #d9d6ce; border-radius: 10px;">
                             </p>
                             <p>
-                                <select name="jeniskelamin" style="width: 520px; height: 30px;">
+                                <select name="jeniskelamin" style="width: 520px; height: 30px; background-color: #d9d6ce; border-color: #d9d6ce; border-radius: 10px;">
                                     <option value="default">Jenis Kelamin</option>
                                     <option value="laki-laki">Laki-laki</option>
                                     <option value="perempuan">Perempuan</option>
                                 </select>
                             </p>
                             <p>
-                                <input type="date" name="tanggal" placeholder="Tanggal Lahir" style="width: 520px; height: 30px;">
+                                <input type="date" name="tanggal" placeholder="Tanggal Lahir" style="width: 520px; height: 30px; background-color: #d9d6ce; border-color: #d9d6ce; border-radius: 10px;">
                             </p>
                         </td>
                         <td style="width: 550px; padding-left: 40px;">
                             <p>
-                                <select name="pendidikan" style="width: 520px; height: 30px;">
+                                <select name="pendidikan" style="width: 520px; height: 30px; background-color: #d9d6ce; border-color: #d9d6ce; border-radius: 10px;">
                                     <option value="default">Pendidikan</option>
                                     <option value="SD">SD</option>
                                     <option value="SMP">SMP</option>
@@ -47,7 +50,7 @@
                                 </select>
                             </p>
                             <p>
-                                <select name="pekerjaan" style="width: 520px; height: 30px;">
+                                <select name="pekerjaan" style="width: 520px; height: 30px; background-color: #d9d6ce; border-color: #d9d6ce; border-radius: 10px;">
                                     <option value="default">Pekerjaan</option>
                                     <option value="petani">Petani</option>
                                     <option value="kantor">Kantor</option>
@@ -65,11 +68,11 @@
                 </table>
         </form>
         </div>
-        <p>
+        <p style="font-size: 25px; font-weight: bold; padding-top: 20px; ">
             Pertanyaan-pertanyaan Kuisoner
         </p>
-        <div style="border: 1px solid black; padding: 10px;">
-            <form action="contact.php" method="POST">
+        <div style="border: 1px solid black; padding: 30px; padding-top: 5px;">
+            <form action="contact.php" method="POST" style="margin: 0px;">
                 <table> 
                     <div style="display: flex; align-items: center; justify-content: center;">
                         <div style="width: 540px;">
@@ -82,22 +85,34 @@
                             <div style="align-items: center; justify-content: center; padding-right: 20px; padding-left: 20px;">
                                 <p>
                                     Sangat Baik
-                                </p><input type="radio" name="satu" value="sangatbaik">
+                                </p>
+                                <div style="display: flex; align-items: center; justify-content: center;">
+                                    <input type="radio" name="satu" value="sangatbaik">
+                                </div>
                             </div>
                             <div style="align-items: center; justify-content: center; padding-right: 20px; padding-left: 20px;">
 						        <p>
                                     Baik
-                                </p><input type="radio" name="satu" value="baik">
+                                </p>
+                                <div style="display: flex; align-items: center; justify-content: center;">
+                                    <input type="radio" name="satu" value="baik">
+                                </div>
                             </div>
                             <div style="align-items: center; justify-content: center; padding-right: 20px; padding-left: 20px;">
                                 <p>
                                     Cukup Baik
-                                </p><input type="radio" name="satu" value="cukupbaik">
+                                </p>
+                                <div style="display: flex; align-items: center; justify-content: center;">
+                                    <input type="radio" name="satu" value="cukupbaik">
+                                </div>
                             </div>
                             <div style="align-items: center; justify-content: center; padding-right: 20px; padding-left: 20px;">
                                 <p>
                                     Tidak Baik
-                                </p><input type="radio" name="satu" value="tidakbaik">
+                                </p>
+                                <div style="display: flex; align-items: center; justify-content: center;">
+                                    <input type="radio" name="satu" value="tidakbaik">
+                                </div>
                             </div>
                         </div>
                         </div>
@@ -105,12 +120,12 @@
                     <hr>
                 </table>
             </form>
-            <form action="contact.php" method="POST">
+            <form action="contact.php" method="POST" style="margin: 0px;">
                 <table> 
                     <div style="display: flex; align-items: center; justify-content: center;">
                         <div style="width: 540px;">
                         <p style="font-size: 17px; display: flex; justify-content: center; align-items: center;">
-                            1. Menurut anda apakah kejelasan dan kepastian petugas yang melayani di Dinas Kesehatan benar-benar sudah sesuai ?
+                            2. Apakah kesesuaian persyaratan pelayanan dengan jenis pelayanannya yang anda rasakan sudah benar-benar sesuai?
                         </p>
                         </div>
                         <div style="width: 540px;">
@@ -118,22 +133,34 @@
                             <div style="align-items: center; justify-content: center; padding-right: 20px; padding-left: 20px;">
                                 <p>
                                     Sangat Baik
-                                </p><input type="radio" name="satu" value="sangatbaik">
+                                </p>
+                                <div style="display: flex; align-items: center; justify-content: center;">
+                                    <input type="radio" name="satu" value="sangatbaik">
+                                </div>
                             </div>
                             <div style="align-items: center; justify-content: center; padding-right: 20px; padding-left: 20px;">
 						        <p>
                                     Baik
-                                </p><input type="radio" name="satu" value="baik">
+                                </p>
+                                <div style="display: flex; align-items: center; justify-content: center;">
+                                    <input type="radio" name="satu" value="baik">
+                                </div>
                             </div>
                             <div style="align-items: center; justify-content: center; padding-right: 20px; padding-left: 20px;">
                                 <p>
                                     Cukup Baik
-                                </p><input type="radio" name="satu" value="cukupbaik">
+                                </p>
+                                <div style="display: flex; align-items: center; justify-content: center;">
+                                    <input type="radio" name="satu" value="cukupbaik">
+                                </div>
                             </div>
                             <div style="align-items: center; justify-content: center; padding-right: 20px; padding-left: 20px;">
                                 <p>
                                     Tidak Baik
-                                </p><input type="radio" name="satu" value="tidakbaik">
+                                </p>
+                                <div style="display: flex; align-items: center; justify-content: center;">
+                                    <input type="radio" name="satu" value="tidakbaik">
+                                </div>
                             </div>
                         </div>
                         </div>
@@ -141,12 +168,12 @@
                     <hr>
                 </table>
             </form>
-            <form action="contact.php" method="POST">
+            <form action="contact.php" method="POST" style="margin: 0px;">
                 <table> 
                     <div style="display: flex; align-items: center; justify-content: center;">
                         <div style="width: 540px;">
                         <p style="font-size: 17px; display: flex; justify-content: center; align-items: center;">
-                            1. Menurut anda apakah kejelasan dan kepastian petugas yang melayani di Dinas Kesehatan benar-benar sudah sesuai ?
+                            3. Bagaimana tingkat kepuasan anda terkait kemudahan dalam hal tata cara atau prosedur pelayanan, kepastian pelayanan dan aspek keterbukaan (transparansi) di Dinas Kesehatan Sulawesi Selatan ?
                         </p>
                         </div>
                         <div style="width: 540px;">
@@ -154,28 +181,48 @@
                             <div style="align-items: center; justify-content: center; padding-right: 20px; padding-left: 20px;">
                                 <p>
                                     Sangat Baik
-                                </p><input type="radio" name="satu" value="sangatbaik">
+                                </p>
+                                <div style="display: flex; align-items: center; justify-content: center;">
+                                    <input type="radio" name="satu" value="sangatbaik">
+                                </div>
                             </div>
                             <div style="align-items: center; justify-content: center; padding-right: 20px; padding-left: 20px;">
 						        <p>
                                     Baik
-                                </p><input type="radio" name="satu" value="baik">
+                                </p>
+                                <div style="display: flex; align-items: center; justify-content: center;">
+                                    <input type="radio" name="satu" value="baik">
+                                </div>
                             </div>
                             <div style="align-items: center; justify-content: center; padding-right: 20px; padding-left: 20px;">
                                 <p>
                                     Cukup Baik
-                                </p><input type="radio" name="satu" value="cukupbaik">
+                                </p>
+                                <div style="display: flex; align-items: center; justify-content: center;">
+                                    <input type="radio" name="satu" value="cukupbaik">
+                                </div>
                             </div>
                             <div style="align-items: center; justify-content: center; padding-right: 20px; padding-left: 20px;">
                                 <p>
                                     Tidak Baik
-                                </p><input type="radio" name="satu" value="tidakbaik">
+                                </p>
+                                <div style="display: flex; align-items: center; justify-content: center;">
+                                    <input type="radio" name="satu" value="tidakbaik">
+                                </div>
                             </div>
                         </div>
                         </div>
                     </div>
+                    <hr>
                 </table>
             </form>
+            <div>
+                <p style="color: #5c5e5d; font-size: 15px;">Tuliskan komentar/usulan Saudara terhadap kemajuan dan pengembangan pelayanan informasi publik</p>
+                <textarea id="komentar" name="komentar" rows="20" cols="143" style="background-color: #d9d6ce; border-color: #d9d6ce; border-radius: 10px;"></textarea>
+            </div>
+        </div>
+        <div style="padding-top: 30px; padding-bottom: 30px;">
+            <input type="submit" name="submit" value="Kirim Survei" style="background-color: #F5B400; border-radius: 10px; width: 150px; height: 30px; border-color: #F5B400;">
         </div>
     </div>
 </body>
