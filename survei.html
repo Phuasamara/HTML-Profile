@@ -9,36 +9,57 @@
         .font::-webkit-input-placeholder{
             color: black;
         }
+        @media screen and (min-width: 0px) {
+            .formbig{display: none}
+            .formsmall{display: block;}
+            .formspacing{padding-left: 10px; padding-right: 10px;}
+            .boxsize{width: 350px;}
+            .fontsize{font-size: 10px;}
+        }
+        @media screen and (min-width: 500px) {
+            .formbig{display: none}
+            .formsmall{display: block;}
+            .formspacing{padding-left: 15px; padding-right: 15px;}
+            .boxsize{width: 500px;}
+            .fontsize{font-size: 15px;}
+        }
+        @media screen and (min-width: 1025px) {
+            .formbig{display: block}
+            .formsmall{display: none}
+            .formspacing{padding-left: 100px; padding-right: 100px;}
+            .boxsize{width: 1010px;}
+            .fontsize{font-size: 17px;}
+        }
     </style>
 </head>
 <body>
     <p style="font-size: 30px; font-weight: bold;">
         Survei Pelayanan Publik
     </p>
-    <div style="padding-left: 100px; padding-right: 100px;">
-        <div style="border: 1px solid black; padding: 10px;">
+    <div class="formspacing">
+        <div style="padding: 10px;">
         <form action="contact.php" method="POST" style="align-items: center;">
-                <table>
+                <table style="box-shadow: 5px 5px 5px 5px #9E9E9E; padding: 10px;">
                     <tr>
                         <td>
                             <p>
-                                <input class="font" type="text" name="nama" placeholder="Nama Lengkap" style="width: 520px; height: 30px; background-color: #d9d6ce; border-color: #d9d6ce; border-radius: 10px;">
+                                <input class="font" type="text" name="nama" placeholder="Nama Lengkap" style="width: 350px; height: 30px; background-color: #d9d6ce; border-color: #d9d6ce; border-radius: 10px;">
                             </p>
                             <p>
-                                <input class="font" type="email" name="email" placeholder="Email" style="width: 520px; height: 30px; background-color: #d9d6ce; border-color: #d9d6ce; border-radius: 10px;">
+                                <input class="font" type="email" name="email" placeholder="Email" style="width: 350px; height: 30px; background-color: #d9d6ce; border-color: #d9d6ce; border-radius: 10px;">
                             </p>
                             <p>
-                                <select name="jeniskelamin" style="width: 520px; height: 30px; background-color: #d9d6ce; border-color: #d9d6ce; border-radius: 10px;">
+                                <select name="jeniskelamin" style="width: 350px; height: 30px; background-color: #d9d6ce; border-color: #d9d6ce; border-radius: 10px;">
                                     <option value="default">Jenis Kelamin</option>
                                     <option value="laki-laki">Laki-laki</option>
                                     <option value="perempuan">Perempuan</option>
                                 </select>
                             </p>
                             <p>
-                                <input type="date" name="tanggal" placeholder="Tanggal Lahir" style="width: 520px; height: 30px; background-color: #d9d6ce; border-color: #d9d6ce; border-radius: 10px;">
+                                <input type="date" name="tanggal" placeholder="Tanggal Lahir" style="width: 350px; height: 30px; background-color: #d9d6ce; border-color: #d9d6ce; border-radius: 10px;">
                             </p>
                         </td>
-                        <td style="width: 550px; padding-left: 40px;">
+                        <td style="padding-left: 40px;" class="formbig">
                             <p>
                                 <select name="pendidikan" style="width: 520px; height: 30px; background-color: #d9d6ce; border-color: #d9d6ce; border-radius: 10px;">
                                     <option value="default">Pendidikan</option>
@@ -65,18 +86,47 @@
                             </p>
                         </td>
                     </tr>
+                    <!-- form responsive with display none -->
+                    <tr class="formsmall">
+                        <td style="padding-top: 10px;">
+                            <p>
+                                <select name="pendidikan" style="width: 350px; height: 30px; background-color: #d9d6ce; border-color: #d9d6ce; border-radius: 10px;">
+                                    <option value="default">Pendidikan</option>
+                                    <option value="SD">SD</option>
+                                    <option value="SMP">SMP</option>
+                                    <option value="SMA/SMK">SMA/SMK</option>
+                                    <option value="perguruantinggi">Perguruan Tinggi</option>
+                                    <option value="lainnya">Lainnya</option>
+                                </select>
+                            </p>
+                            <p>
+                                <select name="pekerjaan" style="width: 350px; height: 30px; background-color: #d9d6ce; border-color: #d9d6ce; border-radius: 10px;">
+                                    <option value="default">Pekerjaan</option>
+                                    <option value="petani">Petani</option>
+                                    <option value="kantor">Kantor</option>
+                                    <option value="wiraswasta">Wiraswasta</option>
+                                    <option value="pegawainegri">Pegawai Negri</option>
+                                    <option value="lainnya">Lainnya</option>
+                                </select>
+                            </p>
+                            <p style="font-size: 15px;">Pernah mengajukan permohonan?</p>
+                            <p>
+                                <input type="checkbox" name="permohonan" /><label for="pernah">Pernah</label><br />
+                            </p>
+                        </td>
+                    </tr>
                 </table>
         </form>
         </div>
         <p style="font-size: 25px; font-weight: bold; padding-top: 20px; ">
             Pertanyaan-pertanyaan Kuisoner
         </p>
-        <div style="border: 1px solid black; padding: 30px; padding-top: 5px;">
+        <div style="box-shadow: 2px 2px 2px 2px #9E9E9E; padding: 30px; padding-top: 5px;" class="boxsize">
             <form action="contact.php" method="POST" style="margin: 0px;">
                 <table> 
                     <div style="display: flex; align-items: center; justify-content: center;">
                         <div style="width: 540px;">
-                        <p style="font-size: 17px; display: flex; justify-content: center; align-items: center;">
+                        <p style="display: flex; justify-content: center; align-items: center;" class="fontsize">
                             1. Menurut anda apakah kejelasan dan kepastian petugas yang melayani di Dinas Kesehatan benar-benar sudah sesuai ?
                         </p>
                         </div>
@@ -124,7 +174,7 @@
                 <table> 
                     <div style="display: flex; align-items: center; justify-content: center;">
                         <div style="width: 540px;">
-                        <p style="font-size: 17px; display: flex; justify-content: center; align-items: center;">
+                        <p style="display: flex; justify-content: center; align-items: center;" class="fontsize">
                             2. Apakah kesesuaian persyaratan pelayanan dengan jenis pelayanannya yang anda rasakan sudah benar-benar sesuai?
                         </p>
                         </div>
@@ -172,7 +222,7 @@
                 <table> 
                     <div style="display: flex; align-items: center; justify-content: center;">
                         <div style="width: 540px;">
-                        <p style="font-size: 17px; display: flex; justify-content: center; align-items: center;">
+                        <p style="display: flex; justify-content: center; align-items: center;" class="fontsize">
                             3. Bagaimana tingkat kepuasan anda terkait kemudahan dalam hal tata cara atau prosedur pelayanan, kepastian pelayanan dan aspek keterbukaan (transparansi) di Dinas Kesehatan Sulawesi Selatan ?
                         </p>
                         </div>
@@ -218,7 +268,7 @@
             </form>
             <div>
                 <p style="color: #5c5e5d; font-size: 15px;">Tuliskan komentar/usulan Saudara terhadap kemajuan dan pengembangan pelayanan informasi publik</p>
-                <textarea id="komentar" name="komentar" rows="20" cols="143" style="background-color: #d9d6ce; border-color: #d9d6ce; border-radius: 10px;"></textarea>
+                <textarea id="komentar" name="komentar" style="background-color: #d9d6ce; border-color: #d9d6ce; border-radius: 10px; width: 350px; height: 100px;"></textarea>
             </div>
         </div>
         <div style="padding-top: 30px; padding-bottom: 30px;">

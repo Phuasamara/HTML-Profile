@@ -5,19 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tugas dan Fungsi</title><style type="text/css">
         body { font-family: Arial; }
+        @media screen and (max-width: 499px) {
+            .content {font-size: 12px}
+            .vertical{display: none}
+            .namefont{font-size: 11px}
+            .positionfont{font-size: 9px}
+        }
+        @media screen and (min-width: 770px) {
+            .content {font-size: 18px}
+            .horizontal{display: none}
+            .namefont{font-size: 15px}
+            .positionfont{font-size: 12px}
+        }
+        @media screen and (max-width: 768px) {
+            .content {font-size: 13px}
+            .horizontal{display: none}
+            .namefont{font-size: 11px}
+            .positionfont{font-size: 9px}
+        }
     </style>
 
 </head>
 <body>
     <table style="padding:50px">
         <tr>
-            <td>
-                <p style="font-size:22px">
+            <td colspan="2">
+                <p class="content">
                     Kepala Dinas mempunyai tugas membantu Gubernur menyelenggarakan Urusan Pemerintahan Bidang Kesehatan yang menjadi kewenangan daerah dan tugas pembantuan yang ditugaskan kepada Pemerintah Daerah.
                     <br> <br>
                     Kepala Dinas dalam melaksanakan tugas  menyelenggarakan  fungsi:
                 </p>
-                <p style="font-size:22px; padding-left: 20px;">
+                <p class="content" style="padding-left: 20px;">
                     1. Perumusan kebijakan urusan pemerintahan Bidang. <br>
                     2. Pelaksanaan kebijakan urusan pemerintahan Bidang. <br>
                     3. Pelaksanaan evaluasi dan pelaporan urusan pemerintahan. <br>
@@ -25,16 +43,34 @@
                     5. Pelaksanaan fungsi lain yang diberikan oleh Gubernur terkait tugas dan fungsinya. <br>
                 </p>
             </td>
-            <td style="padding-right: 22px;">
+            <td style="padding-right: 22px;" class="vertical">
                 <div style="width: 0px; height: 270px; border: 1px #9E9E9E solid;">
                 </div>
             </td>
-            <td width="300px">
+            <td width="300px" class="vertical">
                 <img src="Images/kepaladinas.png" width="155px" height="214px">
-                <p style="font-size:15px">
+                <p class="namefont">
                     <b>dr. Arman Bausat, Sp.B, Sp.OT(K) Spine</b>
                 </p>
-                <p style="font-size:10px">
+                <p class="positionfont">
+                    Kepala Dinas Kesehatan Sulawesi Selatan 
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td class="horizontal" colspan= "2">
+                <hr style="width: 100%"> </hr>
+            <td>
+        </tr>
+        <tr class="horizontal">
+            <td>
+                <img src="Images/kepaladinas.png" width="155px" height="214px">
+            </td>
+            <td>
+                <p class="namefont">
+                    <b>dr. Arman Bausat, Sp.B, Sp.OT(K) Spine</b>
+                </p>
+                <p class="positionfont">
                     Kepala Dinas Kesehatan Sulawesi Selatan 
                 </p>
             </td>
