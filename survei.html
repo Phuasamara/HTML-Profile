@@ -12,23 +12,27 @@
         @media screen and (min-width: 0px) {
             .formbig{display: none}
             .formsmall{display: block;}
-            .formspacing{padding-left: 10px; padding-right: 10px;}
-            .boxsize{width: 350px;}
-            .fontsize{font-size: 10px;}
+            .formspacing{padding-left: 7px; padding-right: 7px;}
+            .boxsize{width: 320px;}
+            .fontsize{font-size: 15px;}
+            .spacing{padding-left: 20px;}
+            .radiosize{font-size: 12px;}
         }
         @media screen and (min-width: 500px) {
-            .formbig{display: none}
-            .formsmall{display: block;}
+            .formbig{display: block}
+            .formsmall{display: none;}
             .formspacing{padding-left: 15px; padding-right: 15px;}
-            .boxsize{width: 500px;}
+            .boxsize{width: 600px;}
             .fontsize{font-size: 15px;}
+            .radiosize{font-size: 15px;}
         }
-        @media screen and (min-width: 1025px) {
+        @media screen and (min-width: 1024px) {
             .formbig{display: block}
             .formsmall{display: none}
-            .formspacing{padding-left: 100px; padding-right: 100px;}
-            .boxsize{width: 1010px;}
+            .formspacing{padding-left: 50px; padding-right: 50px;}
+            .boxsize{width: 870px;}
             .fontsize{font-size: 17px;}
+            .radiosize{font-size: 17px;}
         }
     </style>
 </head>
@@ -43,25 +47,25 @@
                     <tr>
                         <td>
                             <p>
-                                <input class="font" type="text" name="nama" placeholder="Nama Lengkap" style="width: 350px; height: 30px; background-color: #d9d6ce; border-color: #d9d6ce; border-radius: 10px;">
+                                <input class="font" type="text" name="nama" placeholder="Nama Lengkap" style="width: 330px; height: 30px; background-color: #d9d6ce; border-color: #d9d6ce; border-radius: 10px;">
                             </p>
                             <p>
-                                <input class="font" type="email" name="email" placeholder="Email" style="width: 350px; height: 30px; background-color: #d9d6ce; border-color: #d9d6ce; border-radius: 10px;">
+                                <input class="font" type="email" name="email" placeholder="Email" style="width: 330px; height: 30px; background-color: #d9d6ce; border-color: #d9d6ce; border-radius: 10px;">
                             </p>
                             <p>
-                                <select name="jeniskelamin" style="width: 350px; height: 30px; background-color: #d9d6ce; border-color: #d9d6ce; border-radius: 10px;">
+                                <select name="jeniskelamin" style="width: 330px; height: 30px; background-color: #d9d6ce; border-color: #d9d6ce; border-radius: 10px;">
                                     <option value="default">Jenis Kelamin</option>
                                     <option value="laki-laki">Laki-laki</option>
                                     <option value="perempuan">Perempuan</option>
                                 </select>
                             </p>
                             <p>
-                                <input type="date" name="tanggal" placeholder="Tanggal Lahir" style="width: 350px; height: 30px; background-color: #d9d6ce; border-color: #d9d6ce; border-radius: 10px;">
+                                <input type="date" name="tanggal" placeholder="Tanggal Lahir" style="width: 330px; height: 30px; background-color: #d9d6ce; border-color: #d9d6ce; border-radius: 10px;">
                             </p>
                         </td>
                         <td style="padding-left: 40px;" class="formbig">
                             <p>
-                                <select name="pendidikan" style="width: 520px; height: 30px; background-color: #d9d6ce; border-color: #d9d6ce; border-radius: 10px;">
+                                <select name="pendidikan" style="width: 320px; height: 30px; background-color: #d9d6ce; border-color: #d9d6ce; border-radius: 10px;">
                                     <option value="default">Pendidikan</option>
                                     <option value="SD">SD</option>
                                     <option value="SMP">SMP</option>
@@ -71,7 +75,7 @@
                                 </select>
                             </p>
                             <p>
-                                <select name="pekerjaan" style="width: 520px; height: 30px; background-color: #d9d6ce; border-color: #d9d6ce; border-radius: 10px;">
+                                <select name="pekerjaan" style="width: 320px; height: 30px; background-color: #d9d6ce; border-color: #d9d6ce; border-radius: 10px;">
                                     <option value="default">Pekerjaan</option>
                                     <option value="petani">Petani</option>
                                     <option value="kantor">Kantor</option>
@@ -90,7 +94,7 @@
                     <tr class="formsmall">
                         <td style="padding-top: 10px;">
                             <p>
-                                <select name="pendidikan" style="width: 350px; height: 30px; background-color: #d9d6ce; border-color: #d9d6ce; border-radius: 10px;">
+                                <select name="pendidikan" style="width: 330px; height: 30px; background-color: #d9d6ce; border-color: #d9d6ce; border-radius: 10px;">
                                     <option value="default">Pendidikan</option>
                                     <option value="SD">SD</option>
                                     <option value="SMP">SMP</option>
@@ -100,7 +104,7 @@
                                 </select>
                             </p>
                             <p>
-                                <select name="pekerjaan" style="width: 350px; height: 30px; background-color: #d9d6ce; border-color: #d9d6ce; border-radius: 10px;">
+                                <select name="pekerjaan" style="width: 330px; height: 30px; background-color: #d9d6ce; border-color: #d9d6ce; border-radius: 10px;">
                                     <option value="default">Pekerjaan</option>
                                     <option value="petani">Petani</option>
                                     <option value="kantor">Kantor</option>
@@ -133,7 +137,7 @@
                         <div style="width: 540px;">
                         <div style="display: flex; justify-content: center; align-items: center;">
                             <div style="align-items: center; justify-content: center; padding-right: 20px; padding-left: 20px;">
-                                <p>
+                                <p class="radiosize">
                                     Sangat Baik
                                 </p>
                                 <div style="display: flex; align-items: center; justify-content: center;">
@@ -141,7 +145,7 @@
                                 </div>
                             </div>
                             <div style="align-items: center; justify-content: center; padding-right: 20px; padding-left: 20px;">
-						        <p>
+						        <p class="radiosize">
                                     Baik
                                 </p>
                                 <div style="display: flex; align-items: center; justify-content: center;">
@@ -149,7 +153,7 @@
                                 </div>
                             </div>
                             <div style="align-items: center; justify-content: center; padding-right: 20px; padding-left: 20px;">
-                                <p>
+                                <p class="radiosize">
                                     Cukup Baik
                                 </p>
                                 <div style="display: flex; align-items: center; justify-content: center;">
@@ -157,7 +161,7 @@
                                 </div>
                             </div>
                             <div style="align-items: center; justify-content: center; padding-right: 20px; padding-left: 20px;">
-                                <p>
+                                <p class="radiosize">
                                     Tidak Baik
                                 </p>
                                 <div style="display: flex; align-items: center; justify-content: center;">
@@ -172,7 +176,7 @@
             </form>
             <form action="contact.php" method="POST" style="margin: 0px;">
                 <table> 
-                    <div style="display: flex; align-items: center; justify-content: center;">
+                    <div style="display: flex; align-items: center; justify-content: center;" class="spacing">
                         <div style="width: 540px;">
                         <p style="display: flex; justify-content: center; align-items: center;" class="fontsize">
                             2. Apakah kesesuaian persyaratan pelayanan dengan jenis pelayanannya yang anda rasakan sudah benar-benar sesuai?
@@ -181,7 +185,7 @@
                         <div style="width: 540px;">
                         <div style="display: flex; justify-content: center; align-items: center;">
                             <div style="align-items: center; justify-content: center; padding-right: 20px; padding-left: 20px;">
-                                <p>
+                                <p class="radiosize">
                                     Sangat Baik
                                 </p>
                                 <div style="display: flex; align-items: center; justify-content: center;">
@@ -189,7 +193,7 @@
                                 </div>
                             </div>
                             <div style="align-items: center; justify-content: center; padding-right: 20px; padding-left: 20px;">
-						        <p>
+						        <p class="radiosize">
                                     Baik
                                 </p>
                                 <div style="display: flex; align-items: center; justify-content: center;">
@@ -197,7 +201,7 @@
                                 </div>
                             </div>
                             <div style="align-items: center; justify-content: center; padding-right: 20px; padding-left: 20px;">
-                                <p>
+                                <p class="radiosize">
                                     Cukup Baik
                                 </p>
                                 <div style="display: flex; align-items: center; justify-content: center;">
@@ -205,7 +209,7 @@
                                 </div>
                             </div>
                             <div style="align-items: center; justify-content: center; padding-right: 20px; padding-left: 20px;">
-                                <p>
+                                <p class="radiosize">
                                     Tidak Baik
                                 </p>
                                 <div style="display: flex; align-items: center; justify-content: center;">
@@ -220,7 +224,7 @@
             </form>
             <form action="contact.php" method="POST" style="margin: 0px;">
                 <table> 
-                    <div style="display: flex; align-items: center; justify-content: center;">
+                    <div style="display: flex; align-items: center; justify-content: center;" class="spacing">
                         <div style="width: 540px;">
                         <p style="display: flex; justify-content: center; align-items: center;" class="fontsize">
                             3. Bagaimana tingkat kepuasan anda terkait kemudahan dalam hal tata cara atau prosedur pelayanan, kepastian pelayanan dan aspek keterbukaan (transparansi) di Dinas Kesehatan Sulawesi Selatan ?
@@ -229,7 +233,7 @@
                         <div style="width: 540px;">
                         <div style="display: flex; justify-content: center; align-items: center;">
                             <div style="align-items: center; justify-content: center; padding-right: 20px; padding-left: 20px;">
-                                <p>
+                                <p class="radiosize">
                                     Sangat Baik
                                 </p>
                                 <div style="display: flex; align-items: center; justify-content: center;">
@@ -237,7 +241,7 @@
                                 </div>
                             </div>
                             <div style="align-items: center; justify-content: center; padding-right: 20px; padding-left: 20px;">
-						        <p>
+						        <p class="radiosize">
                                     Baik
                                 </p>
                                 <div style="display: flex; align-items: center; justify-content: center;">
@@ -245,7 +249,7 @@
                                 </div>
                             </div>
                             <div style="align-items: center; justify-content: center; padding-right: 20px; padding-left: 20px;">
-                                <p>
+                                <p class="radiosize">
                                     Cukup Baik
                                 </p>
                                 <div style="display: flex; align-items: center; justify-content: center;">
@@ -253,7 +257,7 @@
                                 </div>
                             </div>
                             <div style="align-items: center; justify-content: center; padding-right: 20px; padding-left: 20px;">
-                                <p>
+                                <p class="radiosize">
                                     Tidak Baik
                                 </p>
                                 <div style="display: flex; align-items: center; justify-content: center;">
@@ -268,7 +272,7 @@
             </form>
             <div>
                 <p style="color: #5c5e5d; font-size: 15px;">Tuliskan komentar/usulan Saudara terhadap kemajuan dan pengembangan pelayanan informasi publik</p>
-                <textarea id="komentar" name="komentar" style="background-color: #d9d6ce; border-color: #d9d6ce; border-radius: 10px; width: 350px; height: 100px;"></textarea>
+                <textarea id="komentar" name="komentar" style="background-color: #d9d6ce; border-color: #d9d6ce; border-radius: 10px; width: 300px; height: 100px;"></textarea>
             </div>
         </div>
         <div style="padding-top: 30px; padding-bottom: 30px;">
